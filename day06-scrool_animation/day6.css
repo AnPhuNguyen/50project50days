@@ -1,0 +1,36 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+h1{
+    margin: 10px;
+}
+
+.box{
+    background-color: steelblue;
+    margin: 10px;
+    width: 400px; height: 200px;
+    color: white;
+    border-radius: 10px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+  }
+
+  .box.show {
+    transform: translateX(0);
+  }

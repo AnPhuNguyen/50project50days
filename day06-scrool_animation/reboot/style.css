@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box{
+    background-color: steelblue;
+    border-radius: 10px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.3);;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:nth-of-type(odd){
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even){
+    transform: translateX(-400%);
+    transition: transform 0.4s ease;
+}
+
+.box.show{
+    transform: translateX(0);
+}
+
+.box h2{
+    font-size: 40px;
+    color: white;
+}
