@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: darksalmon;
+}
+
+div{
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    bottom: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+input{
+    background-color: salmon;
+}

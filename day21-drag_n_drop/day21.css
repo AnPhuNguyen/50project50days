@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: steelblue;
+}
+
+.empty {
+    background-color: white;
+    border: solid 3px black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+
+.fill {
+    background-image: url(Smile-face.png);
+    height: 140px;
+    width: 140px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #333;
+    border: white dashed
+}
+
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
